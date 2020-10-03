@@ -12,11 +12,9 @@ def speak(audio):
     engine.runAndWait()
 
 
-book = open('yourpdffile.pdf', 'r')
+book = open('yourpdf.pdf', 'r')
 pdfReader = PyPDF2.PdfFileReader(book)
 pages = pdfReader.numPages
 print(pages)
 
-
-# book.close()
 speak(pdfReader)
